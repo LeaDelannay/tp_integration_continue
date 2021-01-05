@@ -1,15 +1,10 @@
-package test.java;
-
 import main.java.Calculs;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-//@RunWith(Parameterized.class)
 public class CalculsTest {
 
     private Calculs c1 = null;
@@ -44,11 +39,4 @@ public class CalculsTest {
         }
         assertEquals(c1.multiplier(), 2);
     }
-//
-//    @ParameterizedTest(name="Multiplication numéro {index}: nombre1={0}, nombre2={1}, résultat attendu = {2}")
-//    @MethodSource("chargerJeuDeTest")
-//    void testMultiplier(int firstNumber, int secondNumber, int expectedResult) {
-//        Calculs monCal = new Calculs(firstNumber, secondNumber);
-//        assertEquals(expectedResult, monCal.multiplier());
-//    }
 }
